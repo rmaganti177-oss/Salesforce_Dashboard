@@ -5,7 +5,7 @@ body{
 }
 
 .Nav-section{
-    
+    width: 100%;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -18,6 +18,7 @@ body{
 
 .collection{
   display: flex;
+  
 }
 
 .sidebar {
@@ -67,8 +68,9 @@ body{
 
 /* Full screen center */
 .login-wrapper {
+  max-width: 90%;
   min-height: 100vh;
-  width: 100%;
+ 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,7 +81,7 @@ body{
 /* Card */
 .login-card {
   background: #ffffff;
-  width: 350px;
+  
   padding: 40px 30px 30px;
   border-radius: 16px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
@@ -185,3 +187,85 @@ form button:hover {
 .account:hover {
   background: #eaeaea;
 }
+
+.accounts-page {
+  padding: 30px;
+}
+
+/* top row */
+/* wrapper beside sidebar */
+.accounts {
+  margin-left: 260px;   /* SAME as sidebar width */
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start; /* keep at top-left */
+  align-items: flex-start;
+}
+
+/* card */
+.acc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 200px;
+  height: 100px;
+
+  border: 1px solid red;
+  border-radius: 8px;
+  cursor: pointer;
+
+  background: #f5f5f5;
+}
+
+.acc:hover {
+  background: #eaeaea;
+}
+
+
+/* Service page container */
+.serv {
+  height: calc(100vh - 130px); /* subtract navbar height */
+  display: flex;
+  align-items: center;        /* vertical center */
+  justify-content: center;    /* horizontal center */
+}
+
+/* Add Services card */
+.services {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 240px;
+  height: 110px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  cursor: pointer;
+
+  background-color: #f9fafb;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.services:hover {
+  background-color: #eef2ff;
+  border-color: #6366f1;
+  transform: translateY(-3px);
+}
+
+/* Icon */
+.services svg {
+  color: #4f46e5;
+}
+
+/* Text */
+.services h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+

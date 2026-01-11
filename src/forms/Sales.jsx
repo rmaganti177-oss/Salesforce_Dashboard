@@ -1,16 +1,14 @@
 import React from 'react'
+import { IoMdAdd } from "react-icons/io";
 
 const Sales = () => {
   return (
-     <div className="accounts-page">
-          
-          <div className="account">
-            <IoMdAdd size={28} />
-            <h3>Add Sales</h3>
-            <br/>
-          </div>
-    
-        </div>
+    <div className="accounts">
+      <div className="acc">
+        <IoMdAdd size={28} />
+        <h3>Add Sales</h3>
+      </div>
+    </div>
   )
 }
 

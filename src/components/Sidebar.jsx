@@ -1,43 +1,43 @@
-import React from 'react'
-import { FcSalesPerformance } from "react-icons/fc"
-import { MdAccountBalance } from "react-icons/md"
-import { GrServices } from "react-icons/gr"
-import { MdOutlineRecordVoiceOver } from "react-icons/md"
-import { GiCommercialAirplane } from "react-icons/gi"
+import { Link } from "react-router-dom";
+import { FcSalesPerformance } from "react-icons/fc";
+import { MdAccountBalance } from "react-icons/md";
+import { GrServices } from "react-icons/gr";
+import { MdOutlineRecordVoiceOver } from "react-icons/md";
+import { GiCommercialAirplane } from "react-icons/gi";
 
-const Sidebar = ({showAcco}) => {
+const Sidebar = () => {
   return (
     <div className="sidebar">
       <ul className="sidebar-menu">
 
         <li className="menu-item">
           <MdAccountBalance size={28} />
-          <span onClick={showAcco}>Accounts</span>
+          <Link to="/accounts">Accounts</Link>
         </li>
 
         <li className="menu-item">
           <FcSalesPerformance size={28} />
-          <span>Sales</span>
+          <Link to="/sales">Sales</Link>
         </li>
 
         <li className="menu-item">
           <GrServices size={28} />
-          <span>Service</span>
+          <Link to="/service">Service</Link>
         </li>
 
         <li className="menu-item">
           <MdOutlineRecordVoiceOver size={28} />
-          <span>Marketing</span>
+          <Link to="/marketing">Marketing</Link>
         </li>
 
         <li className="menu-item">
           <GiCommercialAirplane size={28} />
-          <span>Commerce</span>
+          <Link to="/commerce">Commerce</Link>
         </li>
 
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
