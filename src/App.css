@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+     font-family: "Roboto", sans-serif;
+}
+
+.Nav-section{
+    
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: burlywood;  /* Dark Navy Blue */
+
+    height: 130px;
+    
+    font-weight: 900;
+}
+
+.collection{
+  display: flex;
+}
+
+.sidebar {
+  width: 260px;
+  height: calc(100vh - 130px);
+   background-color: #0B1C2D; 
+  padding: 20px 10px;
+  border-right: 1px solid #e5e7eb;
+  font-family: "Roboto", sans-serif;
+    /* Charcoal Blue */
+
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: whitesmoke;
+  font-size: 15px;
+  font-weight: 500;
+  
+}
+
+.menu-item svg {
+  min-width: 28px;
+}
+
+.menu-item:hover {
+  background-color: #e8f1fe;
+  color: #1d4ed8;
+  transform: translateX(6px);
+}
+
+.menu-item span {
+  white-space: nowrap;
+}
+
+/* Full screen center */
+.login-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Card */
+.login-card {
+  background: #ffffff;
+  width: 350px;
+  padding: 40px 30px 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  position: relative;
+}
+
+/* Circular image */
+.avatar {
+  width: 90px;
+  height: 90px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar img {
+  width: 55px;
+  height: 55px;
+}
+
+/* Form spacing */
+form {
+  margin-top: 50px;
+}
+
+/* Headings */
+form h3 {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 15px 0 6px;
+  color: #333;
+}
+
+/* Inputs */
+form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+form input:focus {
+  border-color: #667eea;
+}
+
+/* Button */
+form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #5a67d8;
+}
+
+/* main content area */
+.accounts-page {
+  padding: 30px;
+}
+
+/* top row */
+.accounts-header {
+  display: flex;
+  justify-content: center; /* move to left */
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* add user card */
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 600px;
+  width: 200px;
+  height: 100px;
+
+  border: 1px solid red;
+  border-radius: 8px;
+  cursor: pointer;
+
+  background: #f5f5f5;
+}
+
+.account:hover {
+  background: #eaeaea;
+}
