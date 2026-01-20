@@ -1,21 +1,23 @@
 import { Link } from "react-router-dom";
 import { LiaSalesforce } from "react-icons/lia";
 import { FaUserCircle } from "react-icons/fa";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="Nav-section">
-      <div className="Logo">
-        <LiaSalesforce size={90} />
+    <nav className="nav">
+      <div className="nav-left">
+        <LiaSalesforce className="logo-icon" />
+        <span className="brand">Salesforce</span>
       </div>
 
-      <div className="circle">
-        <FaUserCircle size={30} />
-        <Link to="/login" style={{ marginLeft: "8px", cursor: "pointer" }}>
+      <div className="nav-right">
+        <FaUserCircle className="user-icon" />
+        <Link to="/login" className="login-text">
           Login
         </Link>
       </div>
-    </div>
+    </nav>
   );
 };
 

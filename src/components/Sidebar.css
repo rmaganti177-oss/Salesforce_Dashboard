@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Sidebar container */
+.sidebar {
+  width: 240px;
+  height: calc(100vh - 60px);
+  background-color: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  padding-top: 20px;
+  
+  left: 0;
+  top: 0;
+}
+
+/* Menu list */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Menu item */
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, padding-left 0.25s ease;
+}
+
+/* Icon */
+.menu-item svg {
+  min-width: 28px;
+}
+
+/* Link text */
+.menu-item a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #374151; /* dark gray */
+}
+
+/* Hover effect */
+.menu-item:hover {
+  background-color: #f1f5f9;
+  padding-left: 26px;
+}
+
+/* Hover text color */
+.menu-item:hover a {
+  color: #2563eb; /* blue */
+}
+
+/* Active state (optional – add class manually or with NavLink) */
+.menu-item.active {
+  background-color: #e0ecff;
+  border-left: 4px solid #2563eb;
+}
+
+.menu-item.active a {
+  color: #2563eb;
+  font-weight: 600;
+}

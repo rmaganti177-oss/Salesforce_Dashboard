@@ -13,9 +13,9 @@ const App = () => {
     <Routes>
       {/* Layout Route */}
       <Route path="/" element={<LandingPage />}>
-        <Route index element={<Accounts />} />
-        <Route path="login" element={<Login />} />
-        <Route path="accounts" element={<Accounts />} />
+        <Route path="/accounts" element={<Accounts />} />
+        <Route path="/login" element={<Login />} />
+        
         <Route path="sales" element={<Sales />} />
         <Route path="service" element={<Service />} />
         <Route path="marketing" element={<Marketing />} />

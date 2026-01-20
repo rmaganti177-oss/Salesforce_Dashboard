@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Navbar container */
+.nav {
+  height: 70px;
+  width: 100%;
+  background-color: #4f7df3; /* professional blue */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+/* Left side (logo + text) */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.logo-icon {
+  font-size: 48px;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Right side (user + login) */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-icon {
+  font-size: 40px;
+  color: white;
+}
+
+.login-text {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.login-text:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

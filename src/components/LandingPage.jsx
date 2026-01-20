@@ -1,18 +1,19 @@
+import Login from "../forms/Login";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
-import { Outlet } from "react-router-dom";
+import './LandingPage.css'
+import Accounts from "../forms/Accounts";
 
 const LandingPage = () => {
   return (
     <div className="layout">
       <Navbar />
 
-      <div className="collection">
+      
         <Sidebar />
-        <div className="content">
-          <Outlet />
-        </div>
-      </div>
+        <Login/>
+      
+      {/* <Accounts/> */}
     </div>
   );
 };

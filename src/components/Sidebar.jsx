@@ -4,6 +4,7 @@ import { MdAccountBalance } from "react-icons/md";
 import { GrServices } from "react-icons/gr";
 import { MdOutlineRecordVoiceOver } from "react-icons/md";
 import { GiCommercialAirplane } from "react-icons/gi";
+import './Sidebar.css'
 
 const Sidebar = () => {
   return (
