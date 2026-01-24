@@ -12,15 +12,15 @@ const App = () => {
   return (
     <Routes>
       {/* Layout Route */}
-      <Route path="/" element={<LandingPage />}>
+      <Route path="/" element={<LandingPage />}/>
         <Route path="/accounts" element={<Accounts />} />
         <Route path="/login" element={<Login />} />
         
-        <Route path="sales" element={<Sales />} />
-        <Route path="service" element={<Service />} />
-        <Route path="marketing" element={<Marketing />} />
-        <Route path="commerce" element={<Commerce />} />
-      </Route>
+        <Route path="/sales" element={<Sales />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/marketing" element={<Marketing />} />
+        <Route path="/commerce" element={<Commerce />} />
+      
     </Routes>
   );
 };

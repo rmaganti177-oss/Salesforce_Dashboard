@@ -11,7 +11,7 @@ const LandingPage = () => {
 
       
         <Sidebar />
-        <Login/>
+       
       
       {/* <Accounts/> */}
     </div>
