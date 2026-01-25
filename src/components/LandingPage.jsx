@@ -8,12 +8,8 @@ const LandingPage = () => {
   return (
     <div className="layout">
       <Navbar />
-
+      <Sidebar />
       
-        <Sidebar />
-       
-      
-      {/* <Accounts/> */}
     </div>
   );
 };
